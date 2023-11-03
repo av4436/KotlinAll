@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val dao = QuoteDatabase.getDatabase(applicationContext).quoteDao()
         val repository = QuoteRepository(dao)
-
+//Hello ankit
         mainViewModel =
             ViewModelProvider(this, MainViewModelFactory(repository)).get(MainViewModel::class.java)
 
