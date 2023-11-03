@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
+ // Now days we are working mvvm
         val dao = QuoteDatabase.getDatabase(applicationContext).quoteDao()
         val repository = QuoteRepository(dao)
 //Hello ankit
